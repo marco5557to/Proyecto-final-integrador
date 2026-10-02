@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios|LOGstack Empleados</title>
+</head>
+<body>
+    <nav>
+        <img id="Logo" src="./img/Logo-LOGStack.png" alt="">
+        <div id="Info-Usuario-Nav">
+            <img id="Pfp" src="" alt="">
+            <p id="Perfil-Nombre">Pepito Flores</p>
+            <p id="Perfil-Dpto">Desarrollo</p>
+        </div>
+    </nav>
+    <main>
+        <section id="Parte-Sup">
+            <h1>Reportar Incidente o Solicitud</h1>
+            <p>Complete el formulario de incidencia para ser derivado al equipo correspondiente</p>
+            <button>Nuevo ticket</button>
+            <button>Mis tickets</button>
+        </section>
+        <hr>
+        <section id="Parte-Inf">
+            <div id="Encabezado">
+                <h2>Nuevo ticket de incidencia</h2>
+            </div>
+            <div id="Tipo-Problema">
+                <h3>TIPO DE RECLAMO / INCIDENCIA</h3>
+                <ul>
+                    <button>Fallo de hardware</button>
+                    <button>Tara de desarrollo</button>
+                    <button>Bug en producción</button>
+                </ul>
+            </div>
+            <div>
+                <h3>Empleado</h3>
+                <div id="Empleado"></div> <!--Esto y el departamento lo vamosa hacer con variables que completen automáticamente según el inicio de sesión -->
+                <h3>Departamento</h3>
+                <div id="Departamento"></div>
+            </div>
+            <h3>Asunto/Descripción breve</h3>
+            <input type="text" placeholder="Ej. Monitor no da señal/ Error 500 al guardar cliente">
+            <div id="Espacio">
+                <p>En este espacio se ponen determinadas opciones para completar según la opción que se eliga de tipo de problema, pero eso lo hacemos con JS.</p>
+            </div>
+            <h3>Descripción detallada</h3>
+            <input type="button" value="" placeholder="Proporcione todos los detalles posibles...">
+            <hr>
+            <button>Limpiar</button>
+            <button>Registrar ticket</button>
+        </section>
+    </main>
+</body>
+</html>

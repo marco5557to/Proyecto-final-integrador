@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(255, 255, 247);
+}
+
+/*NAVEGADOR*/
+
+nav{
+    background-color: rgb(31, 30, 30);
+    padding: 5px;
+}
+nav img{
+    width: 5%;
+    height: auto;
+}
+
+/*MAIN*/
+
+/*PARTE SUPERIOR DEL MAIN*/
+
+
+/*PARTE INFERIOR DEL MAIN*/
+
+#Parte-Inf{
+    Margin: 10% 20% 10% 20%;
+    padding: 10px;
+    background-color: white;
+}
+#Encabezado{
+    background-color: rgb(31, 30, 30);
+}
+#Encabezado h2{
+    font-size: larger;
+    color: white;
+}
