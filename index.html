@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios|LOGstack Empleados</title>
+    <title>Formularios | LOGstack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/Logo-LOGStack.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-    <nav>
-        <img id="Logo" src="./img/Logo-LOGStack.png" alt="">
-        <div id="Info-Usuario-Nav">
-            <img id="Pfp" src="" alt="">
-            <p id="Perfil-Nombre">Pepito Flores</p>
-            <p id="Perfil-Dpto">Desarrollo</p>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <img id="Logo" src="./img/Logo-LOGStack.png" alt="">
+            <hr>
+            <div id="Info-Usuario-Nav">
+                <div id="Pfp">PF</div>
+                <div class="datos-perfil">
+                    <p id="Perfil-Nombre">Pepito Flores</p>
+                    <p id="Perfil-Dpto">Desarrollo</p>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <section id="Parte-Sup">
-            <h1>Reportar Incidente o Solicitud</h1>
-            <p>Complete el formulario de incidencia para ser derivado al equipo correspondiente</p>
-            <button>Nuevo ticket</button>
-            <button>Mis tickets</button>
+            <div id="Parte-Sup-Iz">
+                <h1>Reportar Incidente o Solicitud</h1>
+                <p>Complete el formulario de incidencia para ser derivado al equipo correspondiente</p>
+            </div>
+            <div id="Parte-Sup-De">
+                <button><span class="material-symbols-outlined">add_circle</span>Nuevo ticket</button>
+                <button><span class="material-symbols-outlined">receipt_long</span>Mis tickets</button>
+            </div>
+
         </section>
         <hr>
-        <section id="Parte-Inf">
+        <section id="Formulario">
             <div id="Encabezado">
                 <h2>Nuevo ticket de incidencia</h2>
             </div>
-            <div id="Tipo-Problema">
-                <h3>TIPO DE RECLAMO / INCIDENCIA</h3>
-                <ul>
-                    <button>Fallo de hardware</button>
-                    <button>Tara de desarrollo</button>
-                    <button>Bug en producción</button>
-                </ul>
+            <div id="Cuerpo">
+                <div id="Tipo-Problema">
+                    <h3>TIPO DE RECLAMO / INCIDENCIA</h3>
+                    <div id="Botones">
+                        <button><span class="material-symbols-outlined">computer</span> Fallo de hardware</button>
+                        <button><span class="material-symbols-outlined">code</span> Tarea de desarrollo</button>
+                        <button><span class="material-symbols-outlined">bug_report</span> Bug en producción</button>
+                    </div>
+                </div>
+                <div id="Info-Empleado">
+                    <div id="Empleado">
+                        <h3>Empleado</h3>
+                        <div class="Espacio-Autocompletado" id="Empleado">Pepito Flores</div>
+                        <!--Esto y el departamento lo vamosa hacer con variables que completen automáticamente según el inicio de sesión -->
+                    </div>
+                    <div>
+                        <h3>Departamento</h3>
+                        <div class="Espacio-Autocompletado" id="Departamento">Desarrollo</div>
+                    </div>
+                </div>
+                <h3>Asunto/Descripción breve</h3>
+                <input type="text" placeholder="Ej. Monitor no da señal/ Error 500 al guardar cliente">
+                <div id="Espacio">
+                    <p>En este espacio se ponen determinadas opciones para completar según la opción que se eliga de
+                        tipo de problema, pero eso lo hacemos con JS.</p>
+                </div>
+
+                <div class="upload-container">
+                    <div class="preview-container">
+                        <img id="vista-previa" src="" alt="Vista previa de la imagen">
+                    </div>
+                     <label for="input-imagen" class="drop-area">
+                        <span class="btn-texto">Seleccionar imagen</span>
+                        <input type="file" id="input-imagen" accept="image/*">
+                    </label>
+                </div>
+
+                <h3>Descripción detallada</h3>
+                <input id="Desc-Detallada" type="text" placeholder="Proporcione todos los detalles posibles...">
+                <hr>
+                <button>Limpiar</button>
+                <button><span class="material-symbols-outlined">send</span>Registrar ticket</button>
             </div>
-            <div>
-                <h3>Empleado</h3>
-                <div id="Empleado"></div> <!--Esto y el departamento lo vamosa hacer con variables que completen automáticamente según el inicio de sesión -->
-                <h3>Departamento</h3>
-                <div id="Departamento"></div>
-            </div>
-            <h3>Asunto/Descripción breve</h3>
-            <input type="text" placeholder="Ej. Monitor no da señal/ Error 500 al guardar cliente">
-            <div id="Espacio">
-                <p>En este espacio se ponen determinadas opciones para completar según la opción que se eliga de tipo de problema, pero eso lo hacemos con JS.</p>
-            </div>
-            <h3>Descripción detallada</h3>
-            <input type="button" value="" placeholder="Proporcione todos los detalles posibles...">
-            <hr>
-            <button>Limpiar</button>
-            <button>Registrar ticket</button>
         </section>
     </main>
 </body>
+
 </html>

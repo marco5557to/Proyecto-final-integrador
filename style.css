@@ -1,34 +1,362 @@
 body{
     background-color: rgb(255, 255, 247);
+    font-family: 'Inter', sans-serif;
 }
-
+p{
+    color: grey;
+}
 /*NAVEGADOR*/
 
 nav{
     background-color: rgb(31, 30, 30);
-    padding: 5px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-nav img{
-    width: 5%;
+#Logo{
+    width: 10vw;
     height: auto;
 }
+#Perfil-Nombre{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+#Perfil-Dpto{
+    color: rgb(177, 125, 30);
+    font-size: 13px;
+    margin: 0;
+}
+nav hr{
+    width: 1px;
+    height: 35px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 15px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+#Info-Usuario-Nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#Pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgb(177, 125, 30);
+    color:  rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORMULARIO -----------------------------------------------------------*/
 
 /*MAIN*/
 
+main{
+    padding: 0% 5% 0% 5%;
+}
+
+button{
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 /*PARTE SUPERIOR DEL MAIN*/
 
-
+#Parte-Sup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+#Parte-Sup-Iz{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: non-wrap;
+}
+#Parte-Sup-Iz h1{
+    white-space: nowrap;
+}
+#Parte-Sup-Iz p{
+    white-space: nowrap;
+}
+#Parte-Sup-De{
+    display: flex;
+    gap: 10px;
+}
 /*PARTE INFERIOR DEL MAIN*/
 
-#Parte-Inf{
-    Margin: 10% 20% 10% 20%;
-    padding: 10px;
+#Formulario{
+    Margin: 5% 20% 5% 20%;
     background-color: white;
+    border: 1px solid rgb(199, 189, 122);
+    box-shadow: 10px 10px 20px grey;
 }
 #Encabezado{
     background-color: rgb(31, 30, 30);
+    padding: 20px;
 }
 #Encabezado h2{
     font-size: larger;
     color: white;
+}
+#Cuerpo{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#Cuerpo input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Desc-Detallada{
+    height: 50%;
+    border-radius: 10px;
+}
+#Botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+#Botones button{
+    background-color: white;
+    border: 1px solid rgb(220, 217, 196);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-direction: column;
+    padding: 20px;
+}
+#Botones button:hover{
+    background-color: rgba(219, 210, 147, 0.164);
+    border: 1px solid rgb(199, 189, 122); /*además del hover tmb van a quedar presionados los botones, pero eso lo hacemos con JS*/
+}
+#Info-Empleado{
+    display: flex;
+    gap: 5px;
+}
+.Espacio-Autocompletado{
+    background-color: rgba(202, 196, 148, 0.164);
+    border: 1px solid rgb(199, 189, 122);
+    width: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Espacio {
+    background-color: rgba(202, 196, 148, 0.164);
+    border: 1px solid rgb(199, 189, 122);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/*GESTIÓN TÉCNICA -----------------------------------------------------------*/
+
+/*Aviso de tickets estancados*/
+
+#Cont-Aviso-TE{
+    background-color: rgb(255, 202, 202);
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Cont-Aviso-TE button{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+#Cont-Aviso-TE section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#Cont-Aviso-TE span{
+    color: red;
+    font-size: 6vh;
+    margin-right: 10px;
+}
+
+#Cont-Aviso-TE h3{
+    color: rgb(122, 31, 31);
+    margin: 0;
+}
+
+#Cont-Aviso-TE p{
+    color: rgb(219, 59, 59);
+    margin: 0;
+}
+
+/*Filtro*/
+
+#Filtro-T{
+    background-color: white;
+    border: 1px solid rgb(199, 189, 122);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+#Filtro-T section{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#Filtro-T p{
+    gap: 10px;
+}
+
+/*Tickets --------------------------------------------*/
+
+.Ticket{
+    background-color: rgb(254, 244, 244);
+    border-left: 5px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#Encabezado-Ticket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+#Ticket-Tipo-Problema{
+    font-size: small;
+    padding: 5px;
+    background-color: rgb(220, 238, 255);
+    border: 1px solid rgb(167, 212, 255);
+    color: rgb(44, 153, 255);
+}
+#Titulo-Problema-Ticket{
+    gap: 0;
+}
+#Titulo-Problema-Ticket h3{
+    margin: 0;
+    padding: 0;
+}
+#Titulo-Problema-Ticket p{
+    margin: 0;
+    padding: 0;
+}
+
+#Ticket-Info-Empleado{
+    background-color: rgba(202, 196, 148, 0.164);
+    border: 1px solid rgb(199, 189, 122);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.Datos-Ticket-Info-Empleado{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Datos-Ticket-Info-Empleado h5{
+    font-weight: bold;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+.Datos-Ticket-Info-Empleado p{
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+#Estancado-Sin-Cambios-Por{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: red;
+}
+#Parte-Inf-Ticket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+#Parte-Inf-Ticket h5{
+    background-color: rgb(255, 255, 181);
+    border: 1px solid rgb(255, 255, 86);
+    border-radius: 10px;
+    color: rgb(193, 193, 43);
+    padding: 10px;
+}
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+/* Ocultar el input tipo file original */
+#input-imagen {
+  display: none;
+}
+
+/* Crear un botón/área personalizada */
+.drop-area {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.drop-area:hover {
+  background-color: #0056b3;
+}
+
+/* Contenedor y estilo de la vista previa */
+.preview-container {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#vista-previa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Oculto hasta que se seleccione una imagen */
 }

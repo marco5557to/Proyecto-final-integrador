@@ -1,2 +1,5 @@
-# Proyecto-final-integrador
-Sistema de Seguimiento de Problemas o Incidencias
+# LOGStack
+Trabajo integrador final - Infante, Wander
+
+13/10
+Maquetado - HTML, CSS
